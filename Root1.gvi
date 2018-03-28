@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="5F3CDC93031DFF66905B9EF446297FB9" Timestamp="1D3B5626D57EA82" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="E56E1BAA8CA385E53DA69E6DE7848BE6" Timestamp="1D3B5629408E8D6" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="5.3.0.59009" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="5.3.0.59009" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.9" Version="5.2.0.49152" />
@@ -14,7 +14,7 @@
 				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="4" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
 					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="5" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
 					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
-					<FileNameText Attached="[bool]True" Height="[float]36" Id="7" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]SimpleMaster" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
+					<FileNameText Attached="[bool]True" Height="[float]36" Id="7" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]SimpleMasterUpdated" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
 						<FontSetting FontFamily="Verdana" FontSize="6" Id="8" />
 					</FileNameText>
 				</IconTemplate>
@@ -37,9 +37,8 @@
 		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
 		<FrontPanelUnplacedItems Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0">
 			<NumericText BaseName="[string]Numeric" Height="[float]24" Id="17" IsReadOnly="[bool]False" Left="[float]0" MinHeight="[float]24" Name="[string]input 0" TabIndex="[int]0" Top="[float]0" Value="{DataItemBinding Id=16}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<NumericText BaseName="[string]Numeric" Height="[float]24" Id="23" IsReadOnly="[bool]False" Left="[float]0" MinHeight="[float]24" Name="[string]input 1" TabIndex="[int]1" Top="[float]0" Value="{DataItemBinding Id=22}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<NumericText BaseName="[string]Numeric" Height="[float]24" Id="31" IsReadOnly="[bool]False" Left="[float]0" MinHeight="[float]24" Name="[string]input 1_2" TabIndex="[int]2" Top="[float]0" Value="{DataItemBinding Id=30}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<NumericText BaseName="[string]Numeric" Height="[float]24" Id="78" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[int]1" IsReadOnly="[bool]True" Left="[float]0" MinHeight="[float]24" Name="[string]Output" TabIndex="[int]3" Top="[float]0" Value="{DataItemBinding Id=77}" ValueFormatter="[string]LV:0" ValueType="[Type]Int32" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<NumericText BaseName="[string]Numeric" Height="[float]24" Id="31" IsReadOnly="[bool]False" Left="[float]0" MinHeight="[float]24" Name="[string]input 1_2" TabIndex="[int]1" Top="[float]0" Value="{DataItemBinding Id=30}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<NumericText BaseName="[string]Numeric" Height="[float]24" Id="78" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[int]1" IsReadOnly="[bool]True" Left="[float]0" MinHeight="[float]24" Name="[string]Output" TabIndex="[int]2" Top="[float]0" Value="{DataItemBinding Id=77}" ValueFormatter="[string]LV:0" ValueType="[Type]Int32" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 		</FrontPanelUnplacedItems>
 		<BlockDiagram Id="12">
 			<DataAccessor Bounds="330 200 40 15" DataItem="16" Id="19" Label="20" xmlns="http://www.ni.com/MocCommon">
@@ -48,24 +47,14 @@
 			<NodeLabel AttachedTo="19" Bounds="286 200 39 14" Id="20" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>input 0</p.Text>
 			</NodeLabel>
-			<Wire Id="21" Joints="N(19:Value)|(370,205) N(87:x)|(400,205)" xmlns="http://www.ni.com/PlatformFramework" />
-			<DataAccessor Bounds="330 215 40 15" DataItem="22" Id="25" Label="26" xmlns="http://www.ni.com/MocCommon">
-				<Terminal DataType="Double" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
-			</DataAccessor>
-			<NodeLabel AttachedTo="25" Bounds="286 215 39 14" Id="26" xmlns="http://www.ni.com/PlatformFramework">
-				<p.Text>input 1</p.Text>
-			</NodeLabel>
-			<Wire Id="27" Joints="N(25:Value)|(370,220) N(87:y)|(400,220)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Multiply Bounds="465 210 30 30" Id="28" Terminals="o=37, c0t0v=85, c1t0v=35" />
 			<DataAccessor Bounds="330 265 40 15" DataItem="30" Id="33" Label="34" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Double" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
 			<NodeLabel AttachedTo="33" Bounds="272 265 53 14" Id="34" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>input 1_2</p.Text>
 			</NodeLabel>
-			<Wire Id="35" Joints="N(33:Value)|(370,270) h(80) v(-40) N(28:c1t0v)|(465,230)" xmlns="http://www.ni.com/PlatformFramework" />
 			<IsGreaterThan0 Bounds="540 210 30 30" Id="36" />
-			<Wire Id="37" Joints="N(28:o)|(495,225) h(25) B(1) N(36:x)|(540,225) B(1) v(45) N(54:48)|(631,270)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="37" Joints="N(33:Value)|(370,270) h(165) B(1) N(54:48)|(631,270) B(1) v(-45) N(36:x)|(540,225)" xmlns="http://www.ni.com/PlatformFramework" />
 			<CaseStructure Bounds="635 90 394 245" Default="49" Id="48" Selected="50" UserSelectorBounds="153 0 88 17">
 				<CaseStructure.Case Bounds="5 5 384 235" Id="49" Pattern="False">
 					<Comment Bounds="130 55 115 15" Id="83" xmlns="http://www.ni.com/MocCommon">
@@ -117,9 +106,8 @@
 				<p.Text>Output</p.Text>
 			</NodeLabel>
 			<Square Bounds="540 180 30 30" Id="84" />
-			<Wire Id="85" Joints="N(87:x/y)|(430,215) h(25) B(1) N(28:c0t0v)|(465,215) B(1) v(-20) N(84:x)|(540,195)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="85" Joints="N(19:Value)|(370,205) h(165) v(-10) N(84:x)|(540,195)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="86" Joints="N(84:x^2)|(570,195) N(53:48)|(631,195)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Divide Bounds="400 200 30 30" Id="87" />
 			<Increment Bounds="1065 210 30 30" Id="88" />
 			<Wire Id="89" Joints="N(76:48)|(1033,225) N(88:x)|(1065,225)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="91" Joints="N(88:x+1)|(1095,225) N(92:x)|(1115,225)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -130,9 +118,6 @@
 			<PanelExecutionWindow Id="14" />
 		</NativeFrontPanel>
 		<DataItem AdaptToDiagramType="True" DataType="Double" Id="16" Name="input 0" xmlns="http://www.ni.com/MocCommon">
-			<p.DefaultValue>0x0</p.DefaultValue>
-		</DataItem>
-		<DataItem AdaptToDiagramType="True" DataType="Double" Id="22" Name="input 1" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>0x0</p.DefaultValue>
 		</DataItem>
 		<DataItem AdaptToDiagramType="True" DataType="Double" Id="30" Name="input 1_2" xmlns="http://www.ni.com/MocCommon">

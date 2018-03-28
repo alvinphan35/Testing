@@ -14,7 +14,7 @@
 				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="4" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
 					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="5" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
 					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
-					<FileNameText Attached="[bool]True" Height="[float]36" Id="7" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]SimpleMaster" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
+					<FileNameText Attached="[bool]True" Height="[float]36" Id="7" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]SimpleBranch" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
 						<FontSetting FontFamily="Verdana" FontSize="6" Id="8" />
 					</FileNameText>
 				</IconTemplate>
@@ -39,7 +39,7 @@
 			<NumericText xmlns="http://www.ni.com/Controls.LabVIEW.Design" BaseName="[string]Numeric" Height="[float]24" Id="17" IsReadOnly="[bool]False" Left="[float]0" MinHeight="[float]24" Name="[string]input 0" TabIndex="[int]0" Top="[float]0" Value="{DataItemBinding Id=16}" Width="[float]72" />
 			<NumericText xmlns="http://www.ni.com/Controls.LabVIEW.Design" BaseName="[string]Numeric" Height="[float]24" Id="23" IsReadOnly="[bool]False" Left="[float]0" MinHeight="[float]24" Name="[string]input 1" TabIndex="[int]1" Top="[float]0" Value="{DataItemBinding Id=22}" Width="[float]72" />
 			<NumericText xmlns="http://www.ni.com/Controls.LabVIEW.Design" BaseName="[string]Numeric" Height="[float]24" Id="31" IsReadOnly="[bool]False" Left="[float]0" MinHeight="[float]24" Name="[string]input 1_2" TabIndex="[int]2" Top="[float]0" Value="{DataItemBinding Id=30}" Width="[float]72" />
-			<NumericText xmlns="http://www.ni.com/Controls.LabVIEW.Design" BaseName="[string]Numeric" Height="[float]24" Id="78" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[int]1" IsReadOnly="[bool]True" Left="[float]0" MinHeight="[float]24" Name="[string]Output" TabIndex="[int]3" Top="[float]0" Value="{DataItemBinding Id=77}" ValueFormatter="[string]LV:0" ValueType="[Type]Int32" Width="[float]72" />
+			<NumericText xmlns="http://www.ni.com/Controls.LabVIEW.Design" BaseName="[string]Numeric" Height="[float]24" Id="78" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[sbyte]1" IsReadOnly="[bool]True" Left="[float]0" MinHeight="[float]24" Name="[string]Output" RadixBase="[RadixBase]0" RadixVisibility="[SMVisibility]Collapsed" TabIndex="[int]3" Top="[float]0" Value="{DataItemBinding Id=77}" ValueFormatter="[string]LV:0" ValueType="[Type]Int8" Width="[float]72" />
 		</FrontPanelUnplacedItems>
 		<BlockDiagram>
 			<Attributes>
@@ -194,52 +194,15 @@
 							<Joints>N(326becea-7326-40f0-bfc4-f09760fc2234:50)|(4,100) N(ba268de8-9ba7-411a-a42d-a77f3967b94e:number)|(28,100)</Joints>
 						</Attributes>
 					</Wire>
-					<ForLoop>
-						<Attributes>
-							<Bounds>163 78 131 116</Bounds>
-							<DiagramId>4ea56c89-fe04-44da-be3f-d77d128c6189</DiagramId>
-							<Id>1e7718ea-3cd0-49a5-a13f-3dccf2f0d3fb</Id>
-						</Attributes>
-						<LoopIteration>
-							<Attributes>
-								<Bounds>5 86 15 15</Bounds>
-								<Id>b1705466-e6ed-4cce-ae2a-e9db760a450c</Id>
-							</Attributes>
-						</LoopIteration>
-						<Wire xmlns="http://www.ni.com/PlatformFramework">
-							<Attributes>
-								<Id>443f1501-fa1e-4e1d-aa19-a2761d6e7711</Id>
-								<Joints>N(b1705466-e6ed-4cce-ae2a-e9db760a450c:Output)|(20,91) h(94) v(-41) N(0dca4122-dcd9-48c3-8389-b149f4e2391e:i0)|(119,50)</Joints>
-							</Attributes>
-						</Wire>
-						<LoopCount>
-							<Attributes>
-								<Bounds>1 1 15 15</Bounds>
-								<Docking>Left</Docking>
-								<Id>506156df-71e1-448f-98f9-ce716d227e13</Id>
-								<Terminals>57=70, 58</Terminals>
-							</Attributes>
-						</LoopCount>
-						<LoopTunnel>
-							<Attributes>
-								<AutoIndex>True</AutoIndex>
-								<Bounds>121 47 13 10</Bounds>
-								<Docking>Right</Docking>
-								<Id>0dca4122-dcd9-48c3-8389-b149f4e2391e</Id>
-								<Terminals>o0=74, i0=71</Terminals>
-								<TunnelMode>0</TunnelMode>
-							</Attributes>
-						</LoopTunnel>
-					</ForLoop>
 					<InRangeAndCoerce>
 						<Attributes>
-							<Bounds>120 80 30 40</Bounds>
+							<Bounds>200 125 30 40</Bounds>
 							<Id>82b807d0-9333-40ba-8e13-2c1431615bf2</Id>
 						</Attributes>
 					</InRangeAndCoerce>
 					<Literal xmlns="http://www.ni.com/MocCommon">
 						<Attributes>
-							<Bounds>65 80 45 15</Bounds>
+							<Bounds>145 125 45 15</Bounds>
 							<DataType>Int8</DataType>
 							<Id>ba39e2b9-01ab-4861-bb48-1ea7fb3de10a</Id>
 							<Label>64</Label>
@@ -255,7 +218,7 @@
 					<NodeLabel xmlns="http://www.ni.com/PlatformFramework">
 						<Attributes>
 							<AttachedTo>ba39e2b9-01ab-4861-bb48-1ea7fb3de10a</AttachedTo>
-							<Bounds>65 62 30 15</Bounds>
+							<Bounds>145 107 30 15</Bounds>
 							<Id>ea359ea5-51f3-46f7-95f0-e4be8a4d2ad9</Id>
 							<Visible>False</Visible>
 						</Attributes>
@@ -264,12 +227,12 @@
 					<Wire xmlns="http://www.ni.com/PlatformFramework">
 						<Attributes>
 							<Id>f06e50ab-46bb-4876-b757-a6a68b964d2b</Id>
-							<Joints>N(ba39e2b9-01ab-4861-bb48-1ea7fb3de10a:Out)|(110,85) N(82b807d0-9333-40ba-8e13-2c1431615bf2:upper limit)|(120,85)</Joints>
+							<Joints>N(ba39e2b9-01ab-4861-bb48-1ea7fb3de10a:Out)|(190,130) N(82b807d0-9333-40ba-8e13-2c1431615bf2:upper limit)|(200,130)</Joints>
 						</Attributes>
 					</Wire>
 					<Literal xmlns="http://www.ni.com/MocCommon">
 						<Attributes>
-							<Bounds>65 110 40 15</Bounds>
+							<Bounds>145 155 40 15</Bounds>
 							<DataType>Int8</DataType>
 							<Id>bc06cae2-8244-4000-93ce-c1da001c5827</Id>
 							<Label>67</Label>
@@ -285,7 +248,7 @@
 					<NodeLabel xmlns="http://www.ni.com/PlatformFramework">
 						<Attributes>
 							<AttachedTo>bc06cae2-8244-4000-93ce-c1da001c5827</AttachedTo>
-							<Bounds>65 92 30 15</Bounds>
+							<Bounds>145 137 30 15</Bounds>
 							<Id>793e0d30-beef-428d-ba9a-e98d6ea2bfd7</Id>
 							<Visible>False</Visible>
 						</Attributes>
@@ -294,37 +257,19 @@
 					<Wire xmlns="http://www.ni.com/PlatformFramework">
 						<Attributes>
 							<Id>cbdea5ee-8ca9-40b9-8371-a186b84de1e1</Id>
-							<Joints>N(bc06cae2-8244-4000-93ce-c1da001c5827:Out)|(105,115) N(82b807d0-9333-40ba-8e13-2c1431615bf2:lower limit)|(120,115)</Joints>
+							<Joints>N(bc06cae2-8244-4000-93ce-c1da001c5827:Out)|(185,160) N(82b807d0-9333-40ba-8e13-2c1431615bf2:lower limit)|(200,160)</Joints>
 						</Attributes>
 					</Wire>
 					<Wire xmlns="http://www.ni.com/PlatformFramework">
 						<Attributes>
 							<Id>eceec7f4-2df1-4bbd-9b7b-82e7339a2a1d</Id>
-							<Joints>N(ba268de8-9ba7-411a-a42d-a77f3967b94e:8bit integer)|(55,100) N(82b807d0-9333-40ba-8e13-2c1431615bf2:x)|(120,100)</Joints>
-						</Attributes>
-					</Wire>
-					<Wire xmlns="http://www.ni.com/PlatformFramework">
-						<Attributes>
-							<Id>75eddf00-f164-4095-bb0a-ee3f213c6bf2</Id>
-							<Joints>N(82b807d0-9333-40ba-8e13-2c1431615bf2:coerced(x\))|(150,85) N(506156df-71e1-448f-98f9-ce716d227e13:57)|(164,85)</Joints>
-						</Attributes>
-					</Wire>
-					<AddArrayElements>
-						<Attributes>
-							<Bounds>320 115 30 30</Bounds>
-							<Id>ee8049b6-42e4-487a-a742-5d087127fbcc</Id>
-						</Attributes>
-					</AddArrayElements>
-					<Wire xmlns="http://www.ni.com/PlatformFramework">
-						<Attributes>
-							<Id>1670dc2e-b844-47e9-bb41-4b20a7a8ae62</Id>
-							<Joints>N(0dca4122-dcd9-48c3-8389-b149f4e2391e:o0)|(297,130) N(ee8049b6-42e4-487a-a742-5d087127fbcc:numeric array)|(320,130)</Joints>
+							<Joints>N(ba268de8-9ba7-411a-a42d-a77f3967b94e:8bit integer)|(55,100) h(10) v(45) N(82b807d0-9333-40ba-8e13-2c1431615bf2:x)|(200,145)</Joints>
 						</Attributes>
 					</Wire>
 					<Wire xmlns="http://www.ni.com/PlatformFramework">
 						<Attributes>
 							<Id>2a42ab0d-61f2-4b66-a2e8-42e84cef8547</Id>
-							<Joints>N(ee8049b6-42e4-487a-a742-5d087127fbcc:sum)|(350,130) N(fc9b2025-c6e9-47ad-a0a1-3bf60c9236ca:50)|(380,130)</Joints>
+							<Joints>N(82b807d0-9333-40ba-8e13-2c1431615bf2:coerced(x\))|(230,130) N(fc9b2025-c6e9-47ad-a0a1-3bf60c9236ca:50)|(380,130)</Joints>
 						</Attributes>
 					</Wire>
 				</CaseStructure.Case>
@@ -377,7 +322,7 @@
 				</Attributes>
 				<Terminal xmlns="http://www.ni.com/PlatformFramework">
 					<Attributes>
-						<DataType>Int32</DataType>
+						<DataType>Int8</DataType>
 						<Direction>Input</Direction>
 						<Hotspot>3 5</Hotspot>
 						<Id>Value</Id>
@@ -459,7 +404,7 @@
 		<DataItem xmlns="http://www.ni.com/MocCommon" AdaptToDiagramType="True" DataType="Double" Id="30" Name="input 1_2">
 			<p.DefaultValue>0x0</p.DefaultValue>
 		</DataItem>
-		<DataItem xmlns="http://www.ni.com/MocCommon" AdaptToDiagramType="True" DataType="Int32" Id="77" Name="Output">
+		<DataItem xmlns="http://www.ni.com/MocCommon" AdaptToDiagramType="True" DataType="Int8" Id="77" Name="Output">
 			<p.DefaultValue>0</p.DefaultValue>
 		</DataItem>
 	</VirtualInstrument>

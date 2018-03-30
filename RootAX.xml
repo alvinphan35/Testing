@@ -172,6 +172,12 @@
 				</Attributes>
 				<p.Text>input 1_2</p.Text>
 			</NodeLabel>
+			<Subtract>
+				<Attributes>
+					<Bounds>270 -40 30 30</Bounds>
+					<Id>4e0184aa-c8a5-4cf1-ae65-ac0e55d1241f</Id>
+				</Attributes>
+			</Subtract>
 		</BlockDiagram>
 		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000">
 			<PanelExecutionWindow Id="14" />

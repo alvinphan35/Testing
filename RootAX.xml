@@ -172,6 +172,12 @@
 				</Attributes>
 				<p.Text>input 1_2</p.Text>
 			</NodeLabel>
+			<Add>
+				<Attributes>
+					<Bounds>275 -50 30 30</Bounds>
+					<Id>9e16680c-821e-42bc-bc3d-2111d679288b</Id>
+				</Attributes>
+			</Add>
 		</BlockDiagram>
 		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000">
 			<PanelExecutionWindow Id="14" />

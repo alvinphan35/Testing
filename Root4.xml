@@ -14,7 +14,7 @@
 				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="4" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
 					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="5" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
 					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
-					<FileNameText Attached="[bool]True" Height="[float]36" Id="7" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]AddSimpleMaster" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
+					<FileNameText Attached="[bool]True" Height="[float]36" Id="7" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]AddSimpleMasterUpdated" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
 						<FontSetting FontFamily="Verdana" FontSize="6" Id="8" />
 					</FileNameText>
 				</IconTemplate>
@@ -45,13 +45,6 @@
 			<Attributes>
 				<Id>a6e96bfb-c0bc-4ca1-89f6-d9d3b5b2b757</Id>
 			</Attributes>
-			<Add>
-				<Attributes>
-					<Bounds>400 200 30 30</Bounds>
-					<Id>b65d21d0-7ece-443c-b643-cf6fc393c7a1</Id>
-					<Terminals>o=29, c0t0v=21, c1t0v=27</Terminals>
-				</Attributes>
-			</Add>
 			<DataAccessor xmlns="http://www.ni.com/MocCommon">
 				<Attributes>
 					<Bounds>330 200 40 15</Bounds>
@@ -79,7 +72,7 @@
 			<Wire xmlns="http://www.ni.com/PlatformFramework">
 				<Attributes>
 					<Id>8554912c-d026-4dee-8298-cd4cba336783</Id>
-					<Joints>N(5f824152-f408-48a0-b08b-92b3a759ae0e:Value)|(370,205) N(b65d21d0-7ece-443c-b643-cf6fc393c7a1:c0t0v)|(400,205)</Joints>
+					<Joints>N(5f824152-f408-48a0-b08b-92b3a759ae0e:Value)|(370,205) N(a80b138a-ac2a-46b2-abdc-4643274ed765:c0t0v)|(400,205)</Joints>
 				</Attributes>
 			</Wire>
 			<DataAccessor xmlns="http://www.ni.com/MocCommon">
@@ -109,7 +102,7 @@
 			<Wire xmlns="http://www.ni.com/PlatformFramework">
 				<Attributes>
 					<Id>761a4457-6742-4e54-85dc-5d83fcbb2ca9</Id>
-					<Joints>N(149ab59e-5f2b-4d6f-a975-8aaad947eecc:Value)|(370,220) N(b65d21d0-7ece-443c-b643-cf6fc393c7a1:c1t0v)|(400,220)</Joints>
+					<Joints>N(149ab59e-5f2b-4d6f-a975-8aaad947eecc:Value)|(370,220) N(a80b138a-ac2a-46b2-abdc-4643274ed765:c1t0v)|(400,220)</Joints>
 				</Attributes>
 			</Wire>
 			<Multiply>
@@ -122,7 +115,7 @@
 			<Wire xmlns="http://www.ni.com/PlatformFramework">
 				<Attributes>
 					<Id>0096d3f9-f96c-4e1c-8738-dabbe0f6416b</Id>
-					<Joints>N(b65d21d0-7ece-443c-b643-cf6fc393c7a1:o)|(430,215) h(25) B(1) N(35ef1f48-f4fc-4007-9a94-6a28ff6da52f:c0t0v)|(465,215) B(1) v(-20) N(a660b2e5-f2bf-4cfc-9ce8-d6b6762d3e10:48)|(631,195)</Joints>
+					<Joints>N(a80b138a-ac2a-46b2-abdc-4643274ed765:o)|(430,215) h(25) B(1) N(35ef1f48-f4fc-4007-9a94-6a28ff6da52f:c0t0v)|(465,215) B(1) v(-20) N(a660b2e5-f2bf-4cfc-9ce8-d6b6762d3e10:48)|(631,195)</Joints>
 				</Attributes>
 			</Wire>
 			<DataAccessor xmlns="http://www.ni.com/MocCommon">
@@ -411,6 +404,13 @@
 					<Joints>N(18b3219a-b2f1-4f50-b2f5-627624cadb33:48)|(1033,225) N(94c3509a-3bcd-4013-8320-1b93d835dc70:Value)|(1066,225)</Joints>
 				</Attributes>
 			</Wire>
+			<Multiply>
+				<Attributes>
+					<Bounds>400 200 30 30</Bounds>
+					<Id>a80b138a-ac2a-46b2-abdc-4643274ed765</Id>
+					<Terminals>o=29, c0t0v=21, c1t0v=27</Terminals>
+				</Attributes>
+			</Multiply>
 		</BlockDiagram>
 		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000">
 			<PanelExecutionWindow Id="14" />
